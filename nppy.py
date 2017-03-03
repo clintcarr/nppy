@@ -9,9 +9,9 @@ headers = {"Accept": "application/json",
 
 session = requests.session()
 
-class ConnectQlik:
+class ConnectnPrinting:
     """
-    Instantiates the Qlik Repository Service Class
+    Instantiates the nPrinting connection class
     """
 
     def __init__(self, server, root = False
@@ -19,7 +19,6 @@ class ConnectQlik:
         """
         Establishes connectivity with Qlik Sense Repository Service
         :param server: servername.domain:4242
-        :param root: path to root.pem certificate
         :param userid: user to use for queries
         :param credential: domain\\username for Windows Authentication
         :param password: password of windows credential
@@ -28,7 +27,6 @@ class ConnectQlik:
         self.root = root
         self.credential = credential
         self.password = password
-  
 
     def get(self,endpoint):
         if self.credential is not False:
@@ -93,7 +91,7 @@ class ConnectQlik:
         return self.post(path, data)
 
 if __name__ == '__main__':
-    np = ConnectQlik(server='np1.qliklocal.net:4993/api/v1', 
+    np = ConnectnPrinting(server='np1.qliklocal.net:4993/api/v1', 
                     credential='qliklocal\\administrator',
                     password='Qlik1234')
     
