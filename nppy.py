@@ -109,4 +109,4 @@ if __name__ == '__main__':
                     password='Qlik1234')
     
     np.auth()
-    np.get_apps()
+
