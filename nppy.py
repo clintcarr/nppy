@@ -107,4 +107,6 @@ if __name__ == '__main__':
     np = ConnectQlik(server='np1.qliklocal.net:4993/api/v1', 
                     credential='qliklocal\\administrator',
                     password='Qlik1234')
+    
     np.auth()
+    np.get_apps()
