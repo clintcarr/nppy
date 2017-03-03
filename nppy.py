@@ -1,21 +1,10 @@
 import requests
 from requests_ntlm import HttpNtlmAuth
 import json
-import csv
-import random
-import string
-
 
 requests.packages.urllib3.disable_warnings()
 
-def set_xrf():
-    characters = string.ascii_letters + string.digits
-    return ''.join(random.sample(characters, 16))
-
-xrf = set_xrf()
-
-headers = {"X-Qlik-XrfKey": xrf,
-            "Accept": "application/json",
+headers = {"Accept": "application/json",
             "Content-Type": "application/json"}
 
 session = requests.session()
@@ -109,4 +98,5 @@ if __name__ == '__main__':
                     password='Qlik1234')
     
     np.auth()
+
 
