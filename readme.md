@@ -35,10 +35,11 @@ print (np.get_reports(guid))
 
 ## APIs available:
 
-get_reports
-get_apps
-get_filters
-get_ondemandrequests
-delete_ondemandrequests
-post_ondemandrequests
-
+Get | Delete | Post
+------------ | ------------- 
+get_reports | delete_ondemandrequest | post_ondemandrequests
+get_reports(id) | 
+get_apps | 
+get_apps(id)| 
+get_filters|
+get_filters(id)|
