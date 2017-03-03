@@ -1,4 +1,4 @@
-# qrspy (Qlik Sense Repository Python)
+# nppy (nPrinting Python)
 Python wrapper for nPrinting APIs.
 
 # Instructions
