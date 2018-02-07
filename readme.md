@@ -1,3 +1,5 @@
+# This wrapper is not functional due to changes in the APIS for nPrinting.  Please do not use.
+
 # nppy (nPrinting Python)
 Python wrapper for nPrinting APIs.
 
